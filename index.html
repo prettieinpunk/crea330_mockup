@@ -3,7 +3,7 @@
   <meta name="valentine" content="for my lover's eyes only">
   <style>
     h1 {
-      color: red;
+      color: firebrick;
       font-family: Helvetica;
       font-size: 100px;
       text-align: center;
@@ -11,8 +11,8 @@
     
     .header {
       display: flex;
-      flex-direction: column; /* Stack items vertically */
-      align-items: center; /* Center horizontally */
+      flex-direction: column; 
+      align-items: center; 
       text-align: center;
 
     }
@@ -24,29 +24,36 @@
     
     .container {
       display: flex; 
-      justify-content: space-around; /* Even spacing */
-      align-items: flex-start; /*line recommended from chatgpt, aligns items at top */
+      justify-content: center; 
       gap: 60px;
       width: 80%;
       margin: 20px auto;
     }
 
     .photo1, .photo2, .photo3 {
-      flex-grow: 1; /*line reccomended by chatgpt, equal width*/
-      width: 30%; /*equal spacing*/
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+      justify-content: flex-start; 
       text-align: center;
-      display: flex; /* Allows vertical stacking and alignment */
-  flex-direction: column; /* Stack image and text */
-  align-items: center; /* Ensures everything inside is centered */
+      width: 30%; 
+      max-width: 300px; 
     }
+    
     
     img.glimpse {
       width: 300px;
       height: 300px;
-      display: flex; /* Allows vertical stacking and alignment */
-      flex-direction: column; /* Stack image and text */
-      align-items: center; /* Ensures everything inside is centered */
+      display: block;
+      margin-bottom: 10px;
     }
+    
+    a{
+      color: firebrick; /* Change link color to red */
+      text-decoration: none; /* Removes the underline */
+    }
+      
+  
   
   </style>
 </head>
@@ -64,7 +71,7 @@
     </div>
     <div class="photo2"> 
       <img src="me.jpg" class="glimpse">
-      <p>i want to tell people i use "lace thong" pronouns, i use "ketamine princess" pronouns, i need people to know that my pronouns are "she/her/suicidality." i want my pronouns to be "sorry/i got/lip stick/on your dick" or "yes/you can fuck me/but I'm just going to lie here" or maybe i'll tell people my pronouns are "yes you can come over/yes i'll give you K/but please don't fucking try to touch my disgusting perfect transexual body."
+      <p>i want to tell people i use <a href="#">"lace thong" </a>pronouns, i use <a href="#">"ketamine princess"</a> pronouns, i need people to know that my pronouns are <a href="#">"she/her/suicidality."</a> i want my pronouns to be <a href="#">"sorry/i got/lip stick/on your dick"</a> or <a href="#">"yes/you can fuck me/but I'm just going to lie here"</a> or maybe i'll tell people my pronouns are <a href="#">"yes you can come over/yes i'll give you K/but please don't fucking try to touch my disgusting perfect transexual body."</a>
       </p>
     </div>
     <div class="photo3">
