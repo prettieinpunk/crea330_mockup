@@ -17,24 +17,37 @@
 
     }
   
-    img {
+    img.glitterheart {
       width: 200px;
       height: 200px;
     }
     
-  .container {
-  display: flex; /* Enables horizontal layout */
-  justify-content: space-around; /* Even spacing */
-  align-items: center; /* Aligns items vertically */
-  width: 100%;
-  margin: 50px auto;
-  text-align: center;
-}
+    .container {
+      display: flex; 
+      justify-content: space-around; /* Even spacing */
+      align-items: flex-start; /*line recommended from chatgpt, aligns items at top */
+      gap: 60px;
+      width: 80%;
+      margin: 20px auto;
+    }
 
-.girl1, .girl2, .girl3 {
-  width: 30%; /* Ensure equal spacing */
-  padding: 10px;
-}
+    .photo1, .photo2, .photo3 {
+      flex-grow: 1; /*line reccomended by chatgpt, equal width*/
+      width: 30%; /*equal spacing*/
+      text-align: center;
+      display: flex; /* Allows vertical stacking and alignment */
+  flex-direction: column; /* Stack image and text */
+  align-items: center; /* Ensures everything inside is centered */
+    }
+    
+    img.glimpse {
+      width: 300px;
+      height: 300px;
+      display: flex; /* Allows vertical stacking and alignment */
+      flex-direction: column; /* Stack image and text */
+      align-items: center; /* Ensures everything inside is centered */
+    }
+  
   </style>
 </head>
   
@@ -44,19 +57,19 @@
     <h1>ellie loor</h1>
   </header>
   <div class="container">
-    <div class="girl1">
-      <img src="circle1.jpg">
-      <p>introducing pronouns, as a practice is perhaps an appeal for everyone to be seen publicly in relation to their preferred private symbol. </p 
+    <div class="photo1">
+      <img src="flower1.gif" class="glimpse">
+      <p>introducing pronouns, as a practice is perhaps an appeal for everyone to be seen publicly in relation to their preferred private symbol.
       </p>
     </div>
-    <div class="girl2"> 
-      <img src="circle2.jpg">
-      <p>pity you had to lose it all<br>shame no one picked up your call<br>painful desire to drop the ball<br>you’re gonna have to take the fall<br> <span class= "bold">i told you to run, i’m not the one</span>
+    <div class="photo2"> 
+      <img src="me.jpg" class="glimpse">
+      <p>i want to tell people i use "lace thong" pronouns, i use "ketamine princess" pronouns, i need people to know that my pronouns are "she/her/suicidality." i want my pronouns to be "sorry/i got/lip stick/on your dick" or "yes/you can fuck me/but I'm just going to lie here" or maybe i'll tell people my pronouns are "yes you can come over/yes i'll give you K/but please don't fucking try to touch my disgusting perfect transexual body."
       </p>
     </div>
-    <div class="girl3">
-      <img src="circle3.jpg">
-      <p>pity you didn’t fear the flames<br>shame you hadn’t learned my name<br>paintings of every life I’ve claimed<br>you’re gonna have to lose this game<br><span class= "bold">i told you to run, a girl is a gun</span>
+    <div class="photo3">
+      <img src="flower.gif" class="glimpse">
+      <p>i don't want anyone to think they are entitled to an explanation of how i relate my gender and my body, and sometimes when i'm asked my pronouns i feel like that's what people are asking for.
      </p>
     </div>
   </div>
